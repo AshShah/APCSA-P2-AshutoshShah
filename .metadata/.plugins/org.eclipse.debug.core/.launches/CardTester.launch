@@ -8,4 +8,5 @@
 </listAttribute>
 <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="CardTester"/>
 <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="Unit 9 1-4"/>
+<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-ea"/>
 </launchConfiguration>
