@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//Â© A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -131,8 +131,8 @@ public class Class
 		//for(int h=0;h<studentList.length;h++)
 		for(int h=0; h<studentList.size();h++)
 		{
-			//if (studentList[h].getAverage()<60.0)
-			if(studentList.get(h).getAverage()<60.0)
+			//if (studentList[h].getAverage()<failingGrade)
+			if(studentList.get(h).getAverage()<failingGrade)
 			{
 				//output= output + studentList[h].getName();
 				output=output + studentList.get(h).getName();
