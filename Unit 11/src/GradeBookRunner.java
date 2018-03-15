@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//Â© A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -29,7 +29,7 @@ public class GradeBookRunner
 			System.out.println("Enter the name of the student: ");
 			Scanner student= new Scanner(System.in);
 			String stuName= student.nextLine();
-			System.out.println("Enter the grades for the student. " + "Enter as class size - grade grade grade");
+			System.out.println("Enter the grades for the student as number of grades - grade grade grade etc.");
 			Scanner grades= new Scanner(System.in);
 			String stuGrades= grades.nextLine();
 			System.out.println(stuGrades);
