@@ -9,13 +9,13 @@ public class CardTester {
 	 */
 	public static void main(String[] args) 
 	{
-		Card test= new Card("jack", "clubs", 11);
+		CardModified test= new CardModified("jack", "clubs", 11);
 		System.out.println(test);
 		
-		Card testOne= new Card("two", "spades", 2);
+		CardModified testOne= new CardModified("two", "spades", 2);
 		System.out.println(testOne);
 		
-		Card testTwo= new Card("queen", "diamonds", 12);
+		CardModified testTwo= new CardModified("queen", "diamonds", 12);
 		System.out.println(testTwo);
 		
 	}

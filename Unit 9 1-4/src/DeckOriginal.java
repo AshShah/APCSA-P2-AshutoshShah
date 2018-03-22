@@ -11,7 +11,7 @@ public class Deck {
 	/**
 	 * cards contains all the cards in the deck.
 	 */
-	private List<Card> cards;
+	private List<CardModified> cards;
 
 	/**
 	 * size is the number of not-yet-dealt cards.
@@ -63,7 +63,7 @@ public class Deck {
 	 * @return the card just dealt, or null if all the cards have been
 	 *         previously dealt.
 	 */
-	public Card deal() {
+	public CardModified deal() {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
 	}
 

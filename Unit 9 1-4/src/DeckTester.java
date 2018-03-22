@@ -11,7 +11,7 @@ public class DeckTester {
 		String[] ranks={"ace","two","three","four", "five", "six", "seven", "eight", "nine", "ten", "jack", "queen", "king"};
 		String[] suits={"clubs","spades", "diamonds","hearts"};
 		int[] values={1,2,3,4,5,6,7,8,9,10,11,12,13};
-		Deck test=new Deck(ranks, suits, values);
+		DeckModified test=new DeckModified(ranks, suits, values);
 		test.shuffle();
 		for (int i=ranks.length*suits.length; i>0;i--)
 		{
