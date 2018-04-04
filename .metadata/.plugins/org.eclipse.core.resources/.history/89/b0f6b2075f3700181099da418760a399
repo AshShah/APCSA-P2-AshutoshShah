@@ -1,0 +1,72 @@
+//© A+ Computer Science  -  www.apluscompsci.com
+//Name -
+//Date -
+//Class -
+//Lab  -
+
+import java.awt.Color;
+import java.awt.Graphics;
+
+public class Paddle extends Block
+{
+   //instance variables
+   private int speed;
+
+   public Paddle()
+   {
+	   super(10,10);
+	   speed =5;
+   }
+   
+   public Paddle(int x, int y)
+   {
+	   super(x,y);
+	   speed=5;
+   }
+   
+   public Paddle(int x, int y, int spd)
+   {
+	   super(x,y);
+	   speed=spd;
+   }
+   
+   public Paddle(int x, int y, int spd, int wth, int ht)
+   {
+	   super(x,y,wth,ht);
+	   speed=spd;
+   }
+
+   public Paddle(int x, int y, int spd, int wth, Color col, int ht)
+   {
+	   super(x,y,wth,ht,col);
+	   speed=spd;
+   }
+
+   //add the other Paddle constructors
+
+
+
+
+
+
+
+
+
+
+   public void moveUpAndDraw(Graphics window)
+   {
+
+
+   }
+
+   public void moveDownAndDraw(Graphics window)
+   {
+
+
+   }
+
+   //add get methods
+   
+   
+   //add a toString() method
+}
