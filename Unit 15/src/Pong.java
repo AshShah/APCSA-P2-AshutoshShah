@@ -174,6 +174,18 @@ public class Pong extends Canvas implements KeyListener, Runnable
 			rightPaddle.moveDownAndDraw(graphToBack);
 		}
 		twoDGraph.drawImage(back, null, 0, 0);
+		
+		if(leftscore==21||rightscore==21)
+		{
+			if(leftscore==21)
+			{
+				graphToBack.drawString("Left team wins!", 350, 120);
+			}
+			else if(rightscore==21)
+			{
+				graphToBack.drawString("Right team wins!", 350, 80);
+			}
+		}
 	}
 
 	public void keyPressed(KeyEvent e)
