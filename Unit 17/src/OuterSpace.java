@@ -1,10 +1,10 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//Â© A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class - 
 //Lab  -
 
-import java.awt.Color;
+import java.awt.Color; 
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Canvas;
@@ -19,8 +19,8 @@ import java.util.ArrayList;
 public class OuterSpace extends Canvas implements KeyListener, Runnable
 {
 	private Ship ship;
-	private Alien alien1;
-	private Alien alien2;
+	private Alien1 alien1;
+	private Alien1 alien2;
 	private Ammo ammo;
 	
 	private AlienHorde horde;
@@ -39,9 +39,9 @@ public class OuterSpace extends Canvas implements KeyListener, Runnable
 		//Ship, Alien
 
 		ship= new Ship(350,450,50,50,3);
-		//alien1= new Alien(300,50,50,50,1);
-		//alien2= new Alien(400,50,50,50,1);
-		//ammo=new Ammo();
+		alien1= new Alien1(300,100,50,50,1);
+		alien2= new Alien1(400,100,50,50,1);
+		ammo=new Ammo();
 		horde = new AlienHorde(15);
 		shots = new Bullets();
 		shots.add(new Ammo(-10,-10,0));
@@ -75,14 +75,14 @@ public class OuterSpace extends Canvas implements KeyListener, Runnable
 		graphToBack.setColor(Color.BLACK);
 		graphToBack.fillRect(0,0,800,600);
 		ship.draw(graphToBack);
-		//alien1.draw(graphToBack);
-		//alien2.draw(graphToBack);
+		alien1.draw(graphToBack);
+		alien2.draw(graphToBack);
 		shots.drawEmAll(graphToBack);
 		shots.moveEmAll();
 		horde.drawEmAll(graphToBack);
 		shots.cleanEmUp(horde.removeDeadOnes(shots.getList()));
 		horde.moveEmAll();
-		//ammo.draw(graphToBack);
+		ammo.draw(graphToBack);
 		//MY COMMENT
 		//Make for loop to iterate thru aliens and see f they detect the wall
 		
@@ -107,17 +107,17 @@ public class OuterSpace extends Canvas implements KeyListener, Runnable
 		}
 		if(keys[4]==true)
 		{
-			//ammo.move("UP");
-			//ammo=new Ammo(ship.getX()+ship.getWidth()/2-2, ship.getY()-14,3);
+			ammo.move("UP");
+			ammo=new Ammo(ship.getX()+ship.getWidth()/2-2, ship.getY()-14,3);
 			shots.add(new Ammo(ship.getX()+ship.getWidth()/2-2 , ship.getY()-14, 3));
 			keys[4]=false;
 		}
 		
 		//ammo.move("UP");
-		//alien1.move("LEFT");
-		//alien2.move("LEFT");
+		alien1.move("LEFT");
+		alien2.move("LEFT");
 		
-		/*if((ammo.getX()+ammo.getWidth()>alien1.getX()) && (ammo.getX()<alien1.getX()+alien1.getWidth()) && (ammo.getY()<alien1.getY()-alien1.getHeight()))
+		if((ammo.getX()+ammo.getWidth()>alien1.getX()) && (ammo.getX()<alien1.getX()+alien1.getWidth()) && (ammo.getY()<alien1.getY()-alien1.getHeight()))
 		{
 			alien1.setPos(-800, -800);
 		}
@@ -125,7 +125,7 @@ public class OuterSpace extends Canvas implements KeyListener, Runnable
 		if((ammo.getX()+ammo.getWidth()>alien2.getX()) && (ammo.getX()<alien2.getX()+alien2.getWidth()) && (ammo.getY()<alien2.getY()-alien2.getHeight()))
 		{
 			alien2.setPos(-800, -800);
-		}*/
+		}
 		
 		//add code to move Ship, Alien, etc.
 
